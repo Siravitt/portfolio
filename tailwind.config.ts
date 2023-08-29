@@ -1,4 +1,7 @@
 import type { Config } from 'tailwindcss'
+import backgroundBlur from './public/images/background-blurs.png'
+
+
 
 const config: Config = {
   content: [
@@ -8,10 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'primary': '#011627',
+        'light-primary': '#607B96'
       },
     },
   },
