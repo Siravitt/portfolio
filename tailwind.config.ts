@@ -16,6 +16,9 @@ const config: Config = {
         'light-primary': '#607B96'
       },
     },
+    borderColor: {
+      DEFAULT: '#607B96'
+    }
   },
   plugins: [],
 }
