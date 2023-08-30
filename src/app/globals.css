@@ -11,3 +11,11 @@
 body {
     background-color: black;
 }
+
+.bg-color-blur {
+    background-image: url(./images/background-blurs.png);
+}
+
+.bg-color-box {
+    background-image: url(./images/background-box.png);
+}
