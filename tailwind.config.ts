@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import backgroundBlur from './public/images/background-blurs.png'
 
 
 
@@ -13,11 +12,15 @@ const config: Config = {
     extend: {
       colors: {
         'primary': '#011627',
-        'light-primary': '#607B96'
+        'light-primary': '#607B96',
+        'peach': '#E99287',
+        'mint': '#43D9AD',
+        'dark-sea': '#4D5BCE',
       },
     },
     borderColor: {
-      DEFAULT: '#607B96'
+      DEFAULT: '#607B96',
+      'plum': '#FEA55F'
     }
   },
   plugins: [],

@@ -1,3 +1,4 @@
 export default function AboutMe() {
-    return <div>About-me</div>
+    return <div className="flex-grow">
+    </div>
 }
