@@ -4,7 +4,7 @@ import React from "react";
 export default function Hello() {
     return (
         <div className="flex-grow bg-color-blur bg-cover bg-center bg-no-repeat md:bg-none md:grid md:grid-cols-2">
-            <div className="h-full px-4 grid grid-rows-2 place-items-end md:px-8 md:place-content-center">
+            <div className="h-full px-4 grid grid-rows-2 place-content-center place-items-end md:px-8">
                 <div className="text-white grid gap-6 md:gap-4">
                     <div>Hi all. I am</div>
                     <div className="text-5xl">Siravit Tanratvijit</div>
