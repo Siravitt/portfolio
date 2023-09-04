@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import BubbleUI from "@/components/BubbleUI";
 
 export default function Hello() {
     return (
@@ -23,8 +24,8 @@ export default function Hello() {
                     </div>
                 </div>
             </div>
-            <div className="hidden bg-color-blur md:block md:bg-cover">
-
+            <div className="hidden bg-color-blur md:grid md:place-content-center md:bg-cover">
+                <BubbleUI />
             </div>
         </div>
     );

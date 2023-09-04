@@ -1,17 +1,22 @@
-export default function saveContact() {
-    const CONTACT = {
+type Contact = {
+    name: string,
+    phone: string,
+    email: string
+}
+
+export default function saveContact(): void {
+    const CONTACT: Contact = {
         name: "Siravit Tanratvijit",
         phone: "084-450-6653",
         email: "siravitt.tan@gmail.com"
     }
-    const vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + CONTACT.name + "\nTEL;TYPE=work,voice:" + CONTACT.phone + "\nEMAIL:" + CONTACT.email + "\nEND:VCARD";
-    let blob = new Blob([vcard], { type: "text/vcard"})
-    const url = URL.createObjectURL(blob);
+    const vcard: string = "BEGIN:VCARD\nVERSION:4.0\nFN:" + CONTACT.name + "\nTEL;TYPE=work,voice:" + CONTACT.phone + "\nEMAIL:" + CONTACT.email + "\nEND:VCARD";
+    let blob: Blob = new Blob([vcard], { type: "text/vcard"})
+    const url:string = URL.createObjectURL(blob);
 
-    const newLink = document.createElement("a")
+    const newLink: HTMLAnchorElement = document.createElement("a")
     newLink.download = CONTACT.name + ".vcf"
     newLink.textContent = CONTACT.name
     newLink.href = url
-
-    return newLink.click()
+    newLink.click()
 }
